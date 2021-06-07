@@ -74,10 +74,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Создание_программ_для_ЧПУ_с_двумя_головами.Properties.Resources._96_969230_red_circle_with_line_png_circle_with_slash;
-            this.pictureBox1.Location = new System.Drawing.Point(390, 131);
+            this.pictureBox1.Location = new System.Drawing.Point(388, 129);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 42);
-            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.Size = new System.Drawing.Size(43, 45);
+            this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
@@ -98,8 +98,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(439, 190);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -117,7 +117,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

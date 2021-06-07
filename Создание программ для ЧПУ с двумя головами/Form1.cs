@@ -16,12 +16,19 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
             TextBoxFirstProgrammName.Text = openFileDialog1.FileName;
             TextBoxSecondProgrammName.Text = openFileDialog2.FileName;
             TextBoxResultName.Text = "new file";
+            string[] pathMass = Directory.GetCurrentDirectory().Split('\\');
+            string directoryPath = pathMass[0]+"\\"+ pathMass[1];
+            for (int i = 2; i < pathMass.Length-3; i++)
+            {
+                directoryPath += "\\"+pathMass[i];
+            }
+            DirectoryPath = directoryPath;
             ToolTip tp = new ToolTip();
             tp.SetToolTip(button, openFileDialog1.FileName);
             tp.SetToolTip(button2, openFileDialog2.FileName);
 
         }
-
+        private string DirectoryPath;
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -48,7 +55,8 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
                 }
                 string resultFileName = folder + "\\" + TextBoxResultName.Text + ".NC";
                 
-                string[] pattern = File.ReadAllLines("Шаблон.txt");
+                string[] pattern = File.ReadAllLines(DirectoryPath+"\\Шаблон.txt");
+
                 string[] firstCode = File.ReadAllLines(openFileDialog1.FileName);
                 string[] secondCode = File.ReadAllLines(openFileDialog2.FileName);
 
@@ -98,10 +106,10 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
                     if (checkBox1.Checked)
                     {
                        string NCCPath;
-                       try { NCCPath = File.ReadAllText("pathForNCC.txt"); }
+                       try { NCCPath = File.ReadAllText(DirectoryPath + "\\pathForNCC.txt"); }
                        catch
                        {
-                           NCCPath = File.ReadAllText("pathForNCC");
+                           NCCPath = File.ReadAllText(DirectoryPath + "\\pathForNCC");
                        }
                        try 
                        { 
@@ -156,7 +164,7 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
         {
             try {
                 MessageBox.Show("По завершению установки укажите путь к NC Corrector в соответсвующем пункте меню настроек");
-                Process.Start(AppContext.BaseDirectory + "nc4_setup.exe"); 
+                Process.Start(DirectoryPath + "\\nc4_setup.exe"); 
             }
             catch(Exception ex)
             {
@@ -172,10 +180,10 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
             if(openFileDialog4.FileName.Equals("Путь к NC Corrector") != true)
             {
                 string _NCCPath = openFileDialog4.FileName;
-                try { File.WriteAllText("pathForNCC.txt", _NCCPath); }
+                try { File.WriteAllText(DirectoryPath + "\\pathForNCC.txt", _NCCPath); }
                 catch
                 {
-                    File.WriteAllText("pathForNCC", _NCCPath);
+                    File.WriteAllText(DirectoryPath + "\\pathForNCC", _NCCPath);
                 }
             }
             else
@@ -188,10 +196,10 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
         private void оПриложенииToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string description;
-            try { description = File.ReadAllText("Справка.txt"); }
+            try { description = File.ReadAllText(DirectoryPath + "\\Справка.txt"); }
             catch
             {
-                description = File.ReadAllText("Справка");
+                description = File.ReadAllText(DirectoryPath + "\\Справка");
             }
             MessageBox.Show(description);
         }
