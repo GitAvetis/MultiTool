@@ -10,6 +10,8 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
 {
     public partial class Form1 : Form
     {
+        public string DirectoryPath;
+
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +30,6 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
             tp.SetToolTip(button2, openFileDialog2.FileName);
 
         }
-        private string DirectoryPath;
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -62,7 +63,7 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
 
                 if (File.Exists(openFileDialog1.FileName) != true || File.Exists(openFileDialog2.FileName) !=true)
                     MessageBox.Show("Неправильно указан путь к одному из выбранных файлов");
-                else if (File.Exists("Шаблон.txt") != true)
+                else if (File.Exists(DirectoryPath + "\\Шаблон.txt") != true)
                     MessageBox.Show("Отсутсвует файл '\'Шаблон'\'");
                 else
                 {

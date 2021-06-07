@@ -16,8 +16,10 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
         public Form2()
         {
             InitializeComponent();
+           
 
         }
+        Form1 form1 = new Form1();
         public bool SetupIsDone = false;
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
                 MessageBox.Show("По завершению установки укажите путь к NC Corrector в соответсвующем пункте меню настроек");
                 
                 Hide();
-                Process setup = Process.Start(AppContext.BaseDirectory + "nc4_setup.exe");
+                Process setup = Process.Start(form1.DirectoryPath + "\\nc4_setup.exe");
                 setup.WaitForExit();
                 Show();
     
