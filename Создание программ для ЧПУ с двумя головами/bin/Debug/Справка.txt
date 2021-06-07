@@ -1,0 +1,3 @@
+This program helps you to combine 2 programs, made for comon CNC machine, into one program, working with Multiinstrumental CNC machine.
+It also gives you the possibility to open the program created by yourself in CNC Corrector to check if this GCode is working correctly
+
