@@ -63,6 +63,16 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _96_969230_red_circle_with_line_png_circle_with_slash {
+            get {
+                object obj = ResourceManager.GetObject("96-969230_red-circle-with-line-png-circle-with-slash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Безымянный_1 {
             get {
                 object obj = ResourceManager.GetObject("Безымянный-1", resourceCulture);

@@ -50,8 +50,8 @@
             this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nCCorrectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog4 = new System.Windows.Forms.OpenFileDialog();
             this.оПриложенииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog4 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -192,16 +192,17 @@
             this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem.Text = "Путь к NC Corrector ";
             this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem.Click += new System.EventHandler(this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem_Click);
             // 
-            // openFileDialog4
-            // 
-            this.openFileDialog4.FileName = "openFileDialog4";
-            // 
             // оПриложенииToolStripMenuItem
             // 
             this.оПриложенииToolStripMenuItem.Name = "оПриложенииToolStripMenuItem";
             this.оПриложенииToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
             this.оПриложенииToolStripMenuItem.Text = "О приложении";
             this.оПриложенииToolStripMenuItem.Click += new System.EventHandler(this.оПриложенииToolStripMenuItem_Click);
+            // 
+            // openFileDialog4
+            // 
+            this.openFileDialog4.FileName = "Путь к NC Corrector";
+
             // 
             // Form1
             // 
