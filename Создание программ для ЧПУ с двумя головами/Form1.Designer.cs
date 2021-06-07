@@ -59,43 +59,48 @@
             // TextBoxFirstProgrammName
             // 
             this.TextBoxFirstProgrammName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxFirstProgrammName.Location = new System.Drawing.Point(25, 27);
+            this.TextBoxFirstProgrammName.Location = new System.Drawing.Point(33, 33);
+            this.TextBoxFirstProgrammName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxFirstProgrammName.Name = "TextBoxFirstProgrammName";
-            this.TextBoxFirstProgrammName.Size = new System.Drawing.Size(507, 24);
+            this.TextBoxFirstProgrammName.Size = new System.Drawing.Size(675, 28);
             this.TextBoxFirstProgrammName.TabIndex = 0;
             // 
             // TextBoxSecondProgrammName
             // 
             this.TextBoxSecondProgrammName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxSecondProgrammName.Location = new System.Drawing.Point(25, 85);
+            this.TextBoxSecondProgrammName.Location = new System.Drawing.Point(33, 105);
+            this.TextBoxSecondProgrammName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxSecondProgrammName.Name = "TextBoxSecondProgrammName";
-            this.TextBoxSecondProgrammName.Size = new System.Drawing.Size(507, 24);
+            this.TextBoxSecondProgrammName.Size = new System.Drawing.Size(675, 28);
             this.TextBoxSecondProgrammName.TabIndex = 1;
             // 
             // TextBoxResultName
             // 
             this.TextBoxResultName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextBoxResultName.Location = new System.Drawing.Point(25, 159);
+            this.TextBoxResultName.Location = new System.Drawing.Point(33, 196);
+            this.TextBoxResultName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxResultName.Name = "TextBoxResultName";
-            this.TextBoxResultName.Size = new System.Drawing.Size(507, 24);
+            this.TextBoxResultName.Size = new System.Drawing.Size(675, 28);
             this.TextBoxResultName.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(25, 125);
+            this.label3.Location = new System.Drawing.Point(33, 154);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 18);
+            this.label3.Size = new System.Drawing.Size(484, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Введите имя для сохранения созданной программы";
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(576, 137);
+            this.button3.Location = new System.Drawing.Point(768, 169);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 70);
+            this.button3.Size = new System.Drawing.Size(141, 86);
             this.button3.TabIndex = 6;
             this.button3.Text = "Выбрать папку для сохранения";
             this.button3.UseVisualStyleBackColor = true;
@@ -108,9 +113,10 @@
             // button
             // 
             this.button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button.Location = new System.Drawing.Point(538, 16);
+            this.button.Location = new System.Drawing.Point(717, 20);
+            this.button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(172, 47);
+            this.button.Size = new System.Drawing.Size(229, 58);
             this.button.TabIndex = 13;
             this.button.Text = "Выбрать первый файл";
             this.button.UseVisualStyleBackColor = true;
@@ -119,9 +125,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(538, 75);
+            this.button2.Location = new System.Drawing.Point(717, 92);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 44);
+            this.button2.Size = new System.Drawing.Size(229, 69);
             this.button2.TabIndex = 14;
             this.button2.Text = "Выбрать второй    файл";
             this.button2.UseVisualStyleBackColor = true;
@@ -140,10 +147,10 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::Создание_программ_для_ЧПУ_с_двумя_головами.Properties.Resources.Безымянный_11;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 193);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 238);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 28);
+            this.pictureBox1.Size = new System.Drawing.Size(29, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -151,21 +158,23 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(50, 200);
+            this.checkBox1.Location = new System.Drawing.Point(67, 246);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(335, 17);
+            this.checkBox1.Size = new System.Drawing.Size(433, 21);
             this.checkBox1.TabIndex = 17;
             this.checkBox1.Text = "Открыть созданный файл в NC Corrector после его создания";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.настройкиToolStripMenuItem,
             this.оПриложенииToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(732, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(976, 28);
             this.menuStrip1.TabIndex = 18;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -175,41 +184,40 @@
             this.nCCorrectorToolStripMenuItem,
             this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem});
             this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
-            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(98, 24);
             this.настройкиToolStripMenuItem.Text = "Настройки";
             // 
             // nCCorrectorToolStripMenuItem
             // 
             this.nCCorrectorToolStripMenuItem.Name = "nCCorrectorToolStripMenuItem";
-            this.nCCorrectorToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.nCCorrectorToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
             this.nCCorrectorToolStripMenuItem.Text = "Установка NC Corrector";
             this.nCCorrectorToolStripMenuItem.Click += new System.EventHandler(this.nCCorrectorToolStripMenuItem_Click);
             // 
             // путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem
             // 
             this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem.Name = "путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem";
-            this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
             this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem.Text = "Путь к NC Corrector ";
             this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem.Click += new System.EventHandler(this.путьКNCCorrectorНаВашемКомпьютереToolStripMenuItem_Click);
             // 
             // оПриложенииToolStripMenuItem
             // 
             this.оПриложенииToolStripMenuItem.Name = "оПриложенииToolStripMenuItem";
-            this.оПриложенииToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
+            this.оПриложенииToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
             this.оПриложенииToolStripMenuItem.Text = "О приложении";
             this.оПриложенииToolStripMenuItem.Click += new System.EventHandler(this.оПриложенииToolStripMenuItem_Click);
             // 
             // openFileDialog4
             // 
             this.openFileDialog4.FileName = "Путь к NC Corrector";
-
             // 
             // Form1
             // 
             this.AcceptButton = this.button;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 230);
+            this.ClientSize = new System.Drawing.Size(976, 283);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
@@ -223,6 +231,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
