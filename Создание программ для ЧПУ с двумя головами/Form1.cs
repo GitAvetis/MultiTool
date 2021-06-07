@@ -88,12 +88,13 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
                         File.AppendAllLines(resultFileName, secondPatternPart);
                         File.AppendAllLines(resultFileName, secondCodeAfterCut);
                         File.AppendAllLines(resultFileName, lastPatterPart);
-                        Process.Start("explorer.exe", folder);
-                        
+  
                         ToolTip tp = new ToolTip();
                         tp.SetToolTip(button3, resultFileName);
                         tp.SetToolTip(TextBoxResultName, resultFileName);
                     }
+                    Process NCOpening = new Process();
+                    Process savingFolderOpen = new Process();
                     if (checkBox1.Checked)
                     {
                        string NCCPath;
@@ -102,13 +103,24 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
                        {
                            NCCPath = File.ReadAllText("pathForNCC");
                        }
-                       try { Process.Start(NCCPath, resultFileName); }
-                       catch {
-                           MessageBox.Show("Программа не нашла NC Corrector на вашем копьютере\n установите это приложение через меню настроек или самостоятельно\n" +
-                                  "В случае, если программа уже установалена - укажите путь к NC Corrector через соответсвующий пункт в меню Настрйоки");
+                       try 
+                       { 
+                            NCOpening = Process.Start(NCCPath, resultFileName);
+                            NCOpening.WaitForExit();
+                           
                        }
-  
-                    }
+                       catch 
+                       {
+                           Hide();
+                           Form2 form2 = new Form2();
+                           form2.ShowDialog();
+                           if (form2.SetupIsDone == true)
+                           Show();
+                       }
+         
+                    } 
+
+                    savingFolderOpen = Process.Start("explorer.exe", folder);
                 }
             }
             else
@@ -157,12 +169,20 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
         {
             openFileDialog4.ShowDialog();
             int n = openFileDialog4.FileName.Split('\\').Length;
-            string _NCCPath = openFileDialog4.FileName;
-            try { File.WriteAllText("pathForNCC.txt", _NCCPath); }
-            catch
+            if(openFileDialog4.FileName.Equals("Путь к NC Corrector") != true)
             {
-                File.WriteAllText("pathForNCC", _NCCPath);
+                string _NCCPath = openFileDialog4.FileName;
+                try { File.WriteAllText("pathForNCC.txt", _NCCPath); }
+                catch
+                {
+                    File.WriteAllText("pathForNCC", _NCCPath);
+                }
             }
+            else
+            {
+                MessageBox.Show("Операция была отменена");
+            }
+           
         }
 
         private void оПриложенииToolStripMenuItem_Click(object sender, EventArgs e)
@@ -175,5 +195,7 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
             }
             MessageBox.Show(description);
         }
+
+ 
     }
 }
