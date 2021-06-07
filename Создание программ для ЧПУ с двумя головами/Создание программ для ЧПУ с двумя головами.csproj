@@ -98,5 +98,8 @@
   <ItemGroup>
     <None Include="bin\Debug\96-969230_red-circle-with-line-png-circle-with-slash.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96-969230_red-circle-with-line-png-circle-with-slash.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
