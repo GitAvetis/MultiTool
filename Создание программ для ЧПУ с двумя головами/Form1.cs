@@ -58,15 +58,21 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
                 
                 string[] pattern = File.ReadAllLines(DirectoryPath+"\\Шаблон.txt");
 
-                string[] firstCode = File.ReadAllLines(openFileDialog1.FileName);
-                string[] secondCode = File.ReadAllLines(openFileDialog2.FileName);
+             
 
-                if (File.Exists(openFileDialog1.FileName) != true || File.Exists(openFileDialog2.FileName) !=true)
+
+                if (File.Exists(openFileDialog1.FileName) != true || 
+                    (openFileDialog1.FileName) == "Имя первой программы" ||
+                    File.Exists(openFileDialog2.FileName) !=true||
+                    openFileDialog2.FileName== "Имя второй программы")
                     MessageBox.Show("Неправильно указан путь к одному из выбранных файлов");
                 else if (File.Exists(DirectoryPath + "\\Шаблон.txt") != true)
                     MessageBox.Show("Отсутсвует файл '\'Шаблон'\'");
                 else
                 {
+                    string[] firstCode = File.ReadAllLines(openFileDialog1.FileName);
+                    string[] secondCode = File.ReadAllLines(openFileDialog2.FileName);
+
                     string[] firstCodeAfterCut = firstCode.SkipWhile(x => x.StartsWith("G0") != true)
                                                      .TakeWhile(x => x.StartsWith("M") != true)
                                                      .ToArray();
