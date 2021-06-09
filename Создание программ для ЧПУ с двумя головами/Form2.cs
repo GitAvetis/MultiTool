@@ -16,7 +16,6 @@ namespace Создание_программ_для_ЧПУ_с_двумя_голо
         public Form2()
         {
             InitializeComponent();
-           
 
         }
         Form1 form1 = new Form1();
